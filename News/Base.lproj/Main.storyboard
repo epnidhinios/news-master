@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hMC-V1-VyY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="p3G-gJ-omE">
+                                    <size key="itemSize" width="319" height="230"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsIconCollectionViewCell" id="WMH-9O-EnW" customClass="NewsIconCollectionViewCell" customModule="News" customModuleProvider="target">
+                                        <rect key="frame" x="28" y="0.0" width="319" height="230"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="319" height="230"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flD-Cl-opf">
+                                                    <rect key="frame" x="10" y="5" width="299" height="46"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="46" id="hEW-wr-Lrh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pencil" translatesAutoresizingMaskIntoConstraints="NO" id="x9l-gI-MnG">
+                                                    <rect key="frame" x="0.0" y="51" width="319" height="179"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="flD-Cl-opf" firstAttribute="leading" secondItem="WMH-9O-EnW" secondAttribute="leading" constant="10" id="5XA-8n-kyR"/>
+                                            <constraint firstItem="x9l-gI-MnG" firstAttribute="leading" secondItem="WMH-9O-EnW" secondAttribute="leading" id="LDl-lq-Wkz"/>
+                                            <constraint firstAttribute="bottom" secondItem="x9l-gI-MnG" secondAttribute="bottom" id="MNp-Uf-6f7"/>
+                                            <constraint firstAttribute="trailing" secondItem="x9l-gI-MnG" secondAttribute="trailing" id="RCF-ed-W07"/>
+                                            <constraint firstAttribute="trailing" secondItem="flD-Cl-opf" secondAttribute="trailing" constant="10" id="aoe-MI-BCX"/>
+                                            <constraint firstItem="flD-Cl-opf" firstAttribute="top" secondItem="WMH-9O-EnW" secondAttribute="top" constant="5" id="miT-wh-X3W"/>
+                                            <constraint firstItem="x9l-gI-MnG" firstAttribute="top" secondItem="flD-Cl-opf" secondAttribute="bottom" id="vo8-jW-k7K"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imgView" destination="x9l-gI-MnG" id="xcT-oa-IdJ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Ezp-jV-z1s"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WBw-7N-ebe"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hMC-V1-VyY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Wv-vs-tJM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hMC-V1-VyY" secondAttribute="bottom" id="2XD-s2-phG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hMC-V1-VyY" secondAttribute="trailing" id="TSo-iK-Y3y"/>
+                            <constraint firstItem="hMC-V1-VyY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uJU-Hw-ouP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="newshaderCollectionView" destination="hMC-V1-VyY" id="kDx-Or-MeP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pencil" width="3264" height="2448"/>
+    </resources>
+</document>
