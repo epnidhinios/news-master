@@ -31,7 +31,7 @@ class NewsIconCollectionViewCell: UICollectionViewCell {
         self.layer.shadowRadius = 1.5
         self.layer.shadowOpacity = 0.5
         self.layer.masksToBounds = false
-        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPat
+        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
         
     }
     
