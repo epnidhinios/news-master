@@ -31,6 +31,12 @@ xcuserdata/
 timeline.xctimeline
 playground.xcworkspace
 
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
 
 # Ada Library Information
 *.ali
