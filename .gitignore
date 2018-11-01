@@ -1,5 +1,7 @@
-# Object file
-*.o
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+.DS_Store
 
 ## Build generated
 build/
@@ -31,12 +33,37 @@ xcuserdata/
 timeline.xctimeline
 playground.xcworkspace
 
-### Xcode Patch ###
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
-!*.xcworkspace/contents.xcworkspacedata
-/*.gcno
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+.build/
 
-# Ada Library Information
-*.ali
+# FastLane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/README.md
+
+# Binding
+LinkingShieldSDK/xcent
+LinkingShieldSDK/build
+LinkingShieldSDK/wrapped-CitimobileApp.ipa
+LinkingShieldSDK/StatusCheckSuccess.log
+LinkingShieldSDK/config.json
+LinkingShieldSDK/Citimobile.xcent
+LinkingShieldSDK/Citimobile.ipa_link.zip
+LinkingShieldSDK/Citimobile.ipa
+LinkingShieldSDK/Citimobile_Signed.ipa
+LinkingShieldSDK/CitiMobile.ipa_link.zip
+LinkingShieldSDK/CitiMobile.xcent
+
+# Coverage
+xcov_output/
+
+#Carthage
+Carthage/Build
+Carthage/Checkouts
+
