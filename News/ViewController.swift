@@ -14,12 +14,6 @@ class ViewController: UIViewController {
     static let images = [UIImage(named: "Image01"),UIImage(named: "Image02"),UIImage(named: "Image03"),UIImage(named: "Image04"),UIImage(named: "Image05"),UIImage(named: "Image06"),UIImage(named: "Image07")]
     
     fileprivate let itemsPerRow: CGFloat = 1
-
-
-
-
-
-  
     @IBOutlet weak var newshaderCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
