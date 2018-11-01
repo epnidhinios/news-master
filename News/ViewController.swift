@@ -86,7 +86,7 @@ extension ViewController : UICollectionViewDelegateFlowLayout {
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         let availableWidth = view.frame.width - 50
         let widthPerItem = availableWidth / itemsPerRow
-        
+        //Test commit
         return CGSize(width: widthPerItem, height: widthPerItem)
     }
     
