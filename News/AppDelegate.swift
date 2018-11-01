@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       //Commit 4
       //Commit 5
       //Commit 6
+      //Commit 7
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
